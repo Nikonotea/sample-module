@@ -1,0 +1,12 @@
+<?php
+declare(strict_types=1);
+/** @var Hello $block */
+
+use Learning\SampleModule\Block\Hello;
+
+?>
+<?php foreach ($block->getItems() as $item): ?>
+<p>
+<?php echo $item->getName(); ?>: <?php echo $item->getDescription(); ?>
+</p>
+<?php endforeach; ?>
